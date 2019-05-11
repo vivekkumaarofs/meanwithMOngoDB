@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg  bg-light navbar-light">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/Table">{{ 'TABLE' | transformLanguage}}</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/Document">CLI Documentation</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/Blog"><i class="far fa-address-book"></i> Angular blog</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/Login" id="login-form-link">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/singup" id="register-form-link">Register</a>
+
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/newRegistration">NewRegis</a>
+
+        </li>
+        <li>
+            <a class="nav-link" routerLink="/Employee">Employee</a>
+        </li>
+        <li>
+            <a class="nav-link" routerLink="/EmployeeList">List of Employee</a>
+        </li>
+        <li>
+            <select (change)="selectLanguage($event)">
+                <option selected="selected">SELECT LANGUAGE</option>       
+                <option value="ENGLISH">ENGLISH</option>
+                <option value="TAMIL">TAMIL</option>
+            </select>
+        </li>
+    </ul>
+
+
+</nav>
+
+
+<!-- In routerLink have to give /prefix otherwise it will create in html tab as /Login/Login in 
+  Chrome Url -->
